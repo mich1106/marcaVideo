@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marca de agua para videos</title>
+    <title>Marca de agua para los videos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 </head>
 <body>
-    <h1>Aplicacion para insertar marca de agua en videos</h1>
-    {{# if error}}
+    <h1>Aplicacion para insertar marcas de agua en los videos</h1>
+
+    {{# if error }}
     <div class="ui negative message">
         <i class="close icon"></i>
         <div class="header">
@@ -18,12 +19,13 @@
     </div>
     {{/if}}
 
-    <form class="ui form" action="/upload-video" method="POST" enctype="multipart/form-data">
+    <form action="/upload-video" method="POST" enctype="multipart/form-data"class="ui form">
         <div class="field">
-            <label>Sube tu video aqui</label>
+            <label for="">Sube tu video aqui</label>
             <input type="file" name="ssvideo" accept="video/*">
         </div>
         <button class="ui button">Subir video</button>
     </form>
+
 </body>
 </html>
